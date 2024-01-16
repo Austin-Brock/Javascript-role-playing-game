@@ -94,6 +94,10 @@ function buyWeapon() {
   }
 }
 
+function sellWeapon() {
+  
+}
+
 function buyWeapon() {
 
 }
