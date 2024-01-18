@@ -175,3 +175,7 @@ function attack() {
 function dodge() {
   
 }
+
+function defeatMonster() {
+
+}
