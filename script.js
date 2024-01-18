@@ -184,13 +184,14 @@ function attack() {
   health -= monsters[fighting].level;
   monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
   healthText.innerText = health;
-  monsterHealthText.innerText = monsterHealth;
+  health -= getMonsterAttackValue(monsters[fighting].level);
   if (health <= 0) {
     lose();
   } else if (monsterHealth <= 0) {
     fighting === 2 ? winGame() : defeatMonster();
   }
 }
+
 
 function dodge() {
   text.innerText = "You dodge the attack from the " + monsters[fighting].name;
