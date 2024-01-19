@@ -264,3 +264,10 @@ function pickTwo() {
 function pickEight() {
   pick(8);
 }
+
+function pick(guess) {
+  const numbers = [];
+  while (numbers.length < 10) {
+
+  }
+}
